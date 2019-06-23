@@ -1,14 +1,16 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import DummyComponent from './Components/dummyComponent';
+import React from 'react'
+import logo from './logo.svg'
+import './App.css'
+import HelloWorld from './Components/HelloWorld/HelloWorld'
+// import InputForm from './Components/InputForm/InputForm'
 
 const App: React.FC = () => {
   return (
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <DummyComponent />
+        <HelloWorld />
+        {/* <InputForm /> */}
         <a
           className="App-link"
           href="https://reactjs.org"
@@ -19,7 +21,7 @@ const App: React.FC = () => {
         </a>
       </header>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App

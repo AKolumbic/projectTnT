@@ -4,12 +4,12 @@ interface IProps {
   name?: string;
 }
 
-const DummyComponent: React.FC<IProps> = (props: IProps) => (
+const HelloWorld: React.FC<IProps> = (props: IProps) => (
   <h1>Hello, {props.name}! Welcome to React and TypeScript.</h1>
 )
 
-DummyComponent.defaultProps = {
+HelloWorld.defaultProps = {
   name: 'world',
 }
 
-export default DummyComponent
+export default HelloWorld
